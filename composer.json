@@ -1,0 +1,37 @@
+{
+    "name": "poldixd/imgproxy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nils Poltmann",
+            "email": "dev@nils.li"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^7.1|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^8.4|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "poldixd\\ImgProxy\\": "src/poldixd/ImgProxy/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "poldixd\\ImgProxy\\Providers\\ImgProxyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
