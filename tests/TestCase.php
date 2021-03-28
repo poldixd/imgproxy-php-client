@@ -13,4 +13,11 @@ class TestCase extends BaseTestCase
             ImgProxyServiceProvider::class,
         ];
     }
+
+    protected function getEnvironmentSetUp($app)
+    {
+        $app['config']->set('app.key', '22367262343462424849646393285854');
+        $app['config']->set('img-proxy.salt', '709d153f359897f4955f6f779a76ff29');
+        $app['config']->set('img-proxy.key', '709d153f359897f4955f6f779a76ff29');
+    }
 }
