@@ -12,6 +12,6 @@ class HelperTest extends TestCase
     {
         $url = imgProxyResize('https://example.org/assets/image.jpg', 800, 600, 79, 'webp');
 
-        $this->assertEquals('/3Y3GbIb0AdpJmwKvlMoLFxUX96gqh9QGKWqp848MVJs/w:800/h:600/q:79/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.webp', $url);
+        $this->assertEquals('/s5EO8k8pNiw-MHrMpIWL1w0uELYMEXwO8jDGo4c_NOM/w:800/h:600/g:ce:0:0/rt:fill/q:79/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.webp', $url);
     }
 }

@@ -8,6 +8,8 @@ if (!function_exists('imgProxyResize')) {
     function imgProxyResize(string $path, int $width, int $height, int $quality = 80, string $extension = 'jpg'): string
     {
         $image = (new Image)
+            ->setResizingType('fill')
+            ->setGravity('ce')
             ->setOriginalPictureUrl($path)
             ->setWidth($width)
             ->setHeight($height)
