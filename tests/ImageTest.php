@@ -20,7 +20,7 @@ class ImageTest extends TestCase
 
         $url = app(ImageSignatureContract::class)->getUrl();
 
-        $this->assertEquals('/A0rVSeZ8HLWofFCY66OcANPeXwi3CjLg03tWrUZNiSA/w:800/h:600/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
+        $this->assertEquals('/syb6T6yT4DADdsLdERUjeiG6XYYz5EmjKtaa3flmcCA/w:800/h:600/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
     }
 
     /** @test */
@@ -35,7 +35,7 @@ class ImageTest extends TestCase
 
         $url = app(ImageSignatureContract::class)->getUrl();
 
-        $this->assertEquals('/9dF1RyriHLo7y2vZVAH5qHc9APHTR9pkT6Qqn1WJ17M/g:noea:123:123/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
+        $this->assertEquals('/95aJoJ6ewDG3Y5VkoC80hy7iX-3AHFClY6DeP7Oyc5I/g:noea:123:123/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
     }
 
     /** @test */
@@ -50,7 +50,7 @@ class ImageTest extends TestCase
 
         $url = app(ImageSignatureContract::class)->getUrl();
 
-        $this->assertEquals('/2swMkkwbBK4vJ3yk-j1hScWOyXSEthqtP4mN5ko-Pbg/rt:fill/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
+        $this->assertEquals('/lGJXJNtyY9C-gHJCkUg5WidP_DrEU39hIvpK8UoRHIs/rt:fill/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
     }
 
     /** @test */
@@ -65,6 +65,6 @@ class ImageTest extends TestCase
 
         $url = app(ImageSignatureContract::class)->getUrl();
 
-        $this->assertEquals('/dLFgvOZbpnx3G5FcJzLBW83HPTLubkteTsYxJiXvxSs/q:79/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
+        $this->assertEquals('/2J0ntEdvwKn_yYOJz2G2xXlSknMOaGX3P_ucUIo0wuk/q:79/aHR0cHM6Ly9leGFtcGxlLm9yZy9hc3NldHMvaW1hZ2UuanBn.jpg', $url);
     } 
 }

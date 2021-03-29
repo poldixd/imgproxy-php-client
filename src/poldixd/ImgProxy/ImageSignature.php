@@ -28,7 +28,7 @@ class ImageSignature
             true
         )), '+/', '-_'), '=');
 
-        return sprintf("/%s/%s", $signature, $path);
+        return sprintf("/%s%s", $signature, $path);
     }
 
     public function getKey(): string
@@ -101,6 +101,6 @@ class ImageSignature
             $path[] = "q:{$this->image->getQuality()}";
         }
 
-        return implode('/', $path) . "/{$this->getEncodedUrl()}.{$this->image->getExtension()}";
+        return '/' . implode('/', $path) . "/{$this->getEncodedUrl()}.{$this->image->getExtension()}";
     }
 }
