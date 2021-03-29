@@ -18,7 +18,10 @@
     "autoload": {
         "psr-4": {
             "poldixd\\ImgProxy\\": "src/poldixd/ImgProxy/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

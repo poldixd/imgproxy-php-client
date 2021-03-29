@@ -89,6 +89,18 @@ class ImageSignature
             $path[] = "bl:{$this->image->getBlur()}";
         }
 
+        if ($this->image->getGravity()) {
+            $path[] = "g:" . implode(':', $this->image->getGravity());
+        }
+
+        if ($this->image->getResizingType()) {
+            $path[] = "rt:{$this->image->getResizingType()}";
+        }
+
+        if ($this->image->getQuality()) {
+            $path[] = "q:{$this->image->getQuality()}";
+        }
+
         return implode('/', $path) . "/{$this->getEncodedUrl()}.{$this->image->getExtension()}";
     }
 }
