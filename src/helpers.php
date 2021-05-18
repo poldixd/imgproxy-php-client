@@ -5,7 +5,7 @@ use poldixd\ImgProxy\Image;
 
 if (!function_exists('imgProxyResize')) {
 
-    function imgProxyResize(string $path, int $width, int $height, int $quality = 80, string $extension = 'jpg'): string
+    function imgProxyResize(string $path, ?int $width, ?int $height, int $quality = 80, string $extension = 'jpg'): string
     {
         $image = (new Image)
             ->setResizingType('fill')

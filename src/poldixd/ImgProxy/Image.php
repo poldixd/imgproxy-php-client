@@ -16,9 +16,11 @@ class Image
     protected string $url;
     protected string $extension = 'jpg';
 
-    public function setWidth(int $width = 1)
+    public function setWidth(?int $width = null)
     {
-        $this->width = abs($width) ?: 1;
+        if ($width !== null) {
+            $this->width = abs($width) ?: 1;
+        }
 
         return $this;
     }
@@ -28,9 +30,11 @@ class Image
         return $this->width;
     }
 
-    public function setHeight(int $height = 1)
+    public function setHeight(?int $height = null)
     {
-        $this->height = abs($height) ?: 1;
+        if ($height !== null) {
+            $this->height = abs($height) ?: 1;
+        }
 
         return $this;
     }
